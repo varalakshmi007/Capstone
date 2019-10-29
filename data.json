@@ -1,0 +1,56 @@
+{
+	"books":[
+		{"id":0, "category":"books", "title":"Ulysses", "description":"Ulysses is the Latinised name of Odysseus, the hero of Homer's epic poem Odyssey, and the novel establishes a series of parallels between the poem and the novel, with structural correspondences between the characters and experiences of Leopold Bloom and Odysseus, Molly Bloom and Penelope, and Stephen Dedalus and Telemachus, in addition to events and themes of the early 20th-century context of modernism, Dublin, and Ireland's relationship to Britain. The novel is highly allusive and also imitates the styles of different periods of English literature.", "author":"", "rating":"", "img":"/img/joyceulysses.jpeg"},
+		{"id":1, "category":"books", "title":"Tom Sawyer", "description":"", "author":"", "rating":"", "img":"/img/tomsawyer.jpg"},
+		{"id":2, "category":"books", "title":"The Chronology of Water", "description":"", "author":"", "rating":"", "img":"/img/chrono.jpg"},
+		{"id":3, "category":"books", "title":"A Confederacy of Dunces", "description":"", "author":"", "rating":"", "img":"/img/confederacy.jpg"},
+		{"id":4, "category":"books", "title":"Do Androids Dream of Electric Sheep?", "description":"", "author":"", "rating":"", "img":"/img/electricsheep.jpg"},
+		{"id":5, "category":"books", "title":"Slaughterhouse Five", "description":"", "author":"", "rating":"", "img":"/img/slaughter.jpg"},
+		{"id":6, "category":"books", "title":"A Wrinkle in Time", "description":"", "author":"", "rating":"", "img":"/img/book4.png"},
+		{"id":7, "category":"books", "title":"Milk and Honey", "description":"", "author":"", "rating":"", "img":"/img/book3.png"},
+		{"id":8, "category":"books", "title":"The Woman in the Window", "description":"", "author":"", "rating":"", "img":"/img/book2.png"},
+		{"id":9, "category":"books", "title":"Fire and Fury", "description":"", "author":"", "rating":"", "img":"/img/book1.png"},
+		{"id":10, "category":"books", "title":"Great Alone", "description":"", "author":"", "rating":"", "img":"/img/book8.png"},
+		{"id":11, "category":"books", "title":"Behind Her Eyes", "description":"", "author":"", "rating":"", "img":"/img/book11.png"},
+		{"id":12, "category":"books", "title":"Bloodline", "description":"", "author":"", "rating":"", "img":"/img/book12.png"},
+		{"id":13, "category":"books", "title":"Victoria", "description":"", "author":"", "rating":"", "img":"/img/book13.png"},
+		{"id":14, "category":"books", "title":"the Obsession", "description":"", "author":"", "rating":"", "img":"/img/book14.png"},
+		{"id":15, "category":"books", "title":"The Sun and Her Flowers", "description":"", "author":"", "rating":"", "img":"/img/book5.png"},
+		{"id":16, "category":"books", "title":"Shortcut Your Startup", "description":"", "author":"", "rating":"", "img":"/img/book7.png"},
+		{"id":17, "category":"books", "title":"The Subtle Art of Not Giving a Fuck", "description":"", "author":"Mark Manson", "rating":"", "img":"/img/book6.png"},
+		{"id":18, "category":"books", "title":"Little Fires Everywhere", "description":"", "author":"Celeste Ng", "rating":"", "img":"/img/book9.png"},
+		{"id":19, "category":"books", "title":"All-American Murder", "description":"", "author":"", "rating":"", "img":"/img/book10.png"}
+	],
+
+	"communities":[
+		{"id":0, "category":"communities", "title":"UMD Fiction", "location":"Coffee Bar", "books":[0,1,2,3], "description":"Meet other terps interested in fiction and exchange books and ideas about the topic", "img":"/img/umdfiction.jpg", 
+			"events":[
+				{"title":"Harry Potter Time", "description":"Time to gather around the common room and share hexes and spells!", "time":"7:30pm", "date":"5/16"}, 
+				{"title":"Monthly Meeting", "description":"", "time":"6pm", "date":"5/23"},
+				{"title":"Breakfast Get Together", "description":"Let's talk about books over breakfast :)", "time":"9:45am", "date":"6/2"}
+
+			]
+		},
+		{"id":1, "category":"communities", "title":"Women, Wit, Wine", "description":"", "img":"/img/wine.jpeg"},
+		{"id":2, "category":"communities", "title":"Poets Society", "description":"", "img":"/img/poetry.png"},
+		{"id":3, "category":"communities", "title":"End of the World?", "description":"", "img":"/img/dystopia.jpg"},
+		{"id":4, "category":"communities", "title":"Omphaloskeptics", "description":"", "img":"/img/thinker.jpg"},
+		{"id":5, "category":"communities", "title":"Gov and Poly", "description":"", "img":"/img/politics.jpg"},
+		{"id":6, "category":"communities", "title":"Coffee Hour", "description":"", "img":"/img/coffee.jpeg"}
+	],
+
+	"exchanges":[
+		{"bookId":12, "borrowerId":2, "lenderId":0, "status":"requested", "pickup":{"date":"", "location":"", "status":"pending"} , "return":{}},
+		{"bookId":9, "borrowerId":2, "lenderId":0, "status":"requested", "pickup":{"date":"", "location":"", "status":"confirmed"} , "return":{}},
+		{"bookId":5, "borrowerId":0, "lenderId":1, "status":"borrowed", "pickup":{}, "return":{}},
+		{"bookId":3, "borrowerId":2, "lenderId":0, "status":"requested", "pickup":{}, "return":{}},
+		{"bookId":4, "borrowerId":2, "lenderId":0, "status":"borrowed", "pickup":{}, "return":{}},
+		{"bookId":16, "borrowerId":0, "lenderId":1, "status":"requested", "pickup":{}, "return":{}}
+	],
+
+	"users":[
+		{"id":0, "username":"jdoe", "password":"foo", "firstName":"John", "lastName":"Doe", "rating":4.8, "img":"/img/adam.jpg", "communities":[0,5], "books":[{"id":0, "condition":"Good"},{"id":9, "condition":"Fair"},{"id":3, "condition":"Poor"},{"id":4, "condition":"Good"},{"id":12, "condition":"Good"}], "waitlist":[0,1,2,3,14]},
+		{"id":1, "username":"jbond", "password":"foo", "firstName":"James", "lastName":"Bond", "rating":3.2, "img":"/img/ben.png", "communities":[6,8], "books":[{"id":0, "condition":"Poor"},{"id":1, "condition":"Good"},{"id":2, "condition":"Fair"},{"id":5, "condition":"Poor"},{"id":6, "condition":"Good"},{"id":7, "condition":"Good"},{"id":12, "condition":"Good"}], "waitlist":[13,14]},
+		{"id":2, "username":"mjane", "password":"foo", "firstName":"Mary", "lastName":"Jane", "rating":2.8, "communities":[6,8], "books":[], "waitlist":[13]}
+	]
+}
